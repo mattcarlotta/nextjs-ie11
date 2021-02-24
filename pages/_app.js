@@ -1,26 +1,20 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-`
-
-const theme = {
-  colors: {
-    primary: '#0070f3',
-  },
-}
+import Head from "next/head";
+import Navbar from "../components/NavBar";
+import GlobalStylesheet from "../styles/globalStylesheet";
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <GlobalStyle />
-      <ThemeProvider theme={theme}>
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+      </Head>
+      <GlobalStylesheet />
+      <Navbar>
         <Component {...pageProps} />
-      </ThemeProvider>
+      </Navbar>
     </>
-  )
+  );
 }

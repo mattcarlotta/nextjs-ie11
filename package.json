@@ -1,5 +1,5 @@
 {
-  "name": "with-styled-components",
+  "name": "with-styled-components-ie11",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
@@ -8,12 +8,13 @@
   },
   "dependencies": {
     "next": "latest",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-is": "^16.8.0",
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
+    "address": "^1.1.2",
     "babel-plugin-styled-components": "^1.8.0"
   },
   "license": "MIT"
